@@ -1,0 +1,24 @@
+.menu{
+    background-color: #121618;
+}
+.image{
+    height:250px;
+    width:100%;
+    opacity: 1;
+    transition: 0.3s ease;
+    
+}
+.image-style:hover .image {
+    opacity: 0.3;
+   
+  }
+.link a{
+    text-decoration: none;
+    color:white;
+  margin-left: 10px;
+  padding-left: 10px;
+  
+}
+.link a:hover{
+    color: gold;
+}
