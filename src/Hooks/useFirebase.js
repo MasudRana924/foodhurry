@@ -1,17 +1,16 @@
 import { useEffect, useState } from 'react';
 import initializeAuthentication from './../Pages/Firebase/firebase.ini';
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
-
+import { getAuth, signInWithPopup, GoogleAuthProvider , onAuthStateChanged,signOut} from "firebase/auth";
 initializeAuthentication()
 const useFirebase = () => {
     const [user, setUser] = useState({})
-   
-    const auth = getAuth()
-    const googleProvider = new GoogleAuthProvider();
+    const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider()
     const googleSignIn = () => {
-      return  signInWithPopup(auth, googleProvider)
-      
-   
+       
+        return  signInWithPopup(auth, googleProvider)
+
+
     }
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
@@ -27,7 +26,7 @@ const useFirebase = () => {
             })
     }
     return {
-        user,  googleSignIn, logOut
+        user, googleSignIn,logOut
     }
 
 }

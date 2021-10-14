@@ -1,0 +1,18 @@
+.card-style{
+    transition: 0.3s;  
+    background-color: #121618;
+    height:500px;
+}
+.images{
+    height:200px;
+    width:100%;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+.card-style:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card-style:hover .image {
+    opacity: 0.3;
+   
+  }

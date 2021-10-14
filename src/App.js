@@ -10,10 +10,15 @@ import Header from './Pages/Shared/Header/Header'
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/Login/Login';
+import AuthProvider from './Context/AuthProvider'
+import Burgers from './Pages/Burger/Burgers';
+import PrivateRoute from './Private/PrivateRoute';
+import Order from './Pages/Order/Order';
 function App() {
   return (
     <div className="App">
-      <Router>
+   <AuthProvider>
+     <Router>
       <Header></Header>
         <Switch>
         
@@ -26,15 +31,16 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route>
-            
+          <Route path="/burger">
+            <Burgers></Burgers>
           </Route>
-          <Route>
-            
-          </Route>
+          <PrivateRoute path="/order">
+            <Order></Order>
+          </PrivateRoute>
         </Switch>
         <Footer></Footer>
       </Router>
+   </AuthProvider>
     </div>
   );
 }

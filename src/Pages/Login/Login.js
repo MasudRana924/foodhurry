@@ -1,8 +1,19 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-
+import { Link,useLocation,useHistory} from 'react-router-dom';
+import useFirebase from '../../Hooks/useFirebase';
 const Login = () => {
+
+    const{googleSignIn}=useFirebase()
+    const location = useLocation()
+    const location_url=location.state?.from || '/home'
+    const history=useHistory()
+    const handleGoogleLogIn=()=>{
+        googleSignIn()
+        .then(result => {
+            history.push(location_url)
+        })
+    }
     return (
         <Container fluid>
             <div className="row mt-5">
@@ -13,7 +24,7 @@ const Login = () => {
                     <div class=" card ps-3 pe-3 border-1 rounded-3 shadow-class">
                         <h3 class="mt-3 h3 ">Sign-in with</h3>
 
-                        <button onClick="" class="w-25 mx-auto btn rounded-3 bg-success mt-3">Google</button>
+                        <button onClick={handleGoogleLogIn} class="w-25 mx-auto btn rounded-3 bg-success mt-3">Google</button>
                         <br />
                         -----------OR-----------
                         <small class="para-two mt-3 text-start">Email</small>
