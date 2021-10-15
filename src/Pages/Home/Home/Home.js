@@ -1,14 +1,16 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Menu from '../Meanu/Menu';
 import Services from '../Services/Services';
 import Subcribed from '../Subscribed/Subcribed';
+
+import Foods from '../Foods/Foods';
 
 const Home = () => {
     return (
         <div>
+
             <Banner></Banner>
-            <Menu></Menu>
+            <Foods></Foods>
             <Services></Services>
             <Subcribed></Subcribed>
         </div>

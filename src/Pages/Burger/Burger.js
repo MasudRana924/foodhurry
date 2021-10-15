@@ -7,7 +7,7 @@ const Burger = (props) => {
     const {name,price,desc,img}=props.burger
     const history = useHistory();
     const handleOrder = () => {
-        history.push('/order')
+        // history.push('/order')
     }
     return (
         <Col className="mt-3">

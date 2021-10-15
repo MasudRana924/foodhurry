@@ -14,6 +14,8 @@ import AuthProvider from './Context/AuthProvider'
 import Burgers from './Pages/Burger/Burgers';
 import PrivateRoute from './Private/PrivateRoute';
 import Order from './Pages/Order/Order';
+import Cart from './Pages/Cart/Cart';
+import Details from './Pages/Home/Details/Details';
 function App() {
   return (
     <div className="App">
@@ -25,18 +27,21 @@ function App() {
           <Route exact path="/">
           <Home></Home>
           </Route>
+          
           <Route path="/home">
           <Home></Home>
           </Route>
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/burger">
-            <Burgers></Burgers>
+          <Route path="/details/:foodId">
+            <Details></Details>
+
           </Route>
-          <PrivateRoute path="/order">
-            <Order></Order>
-          </PrivateRoute>
+          <Route path="/cart">
+            <Cart></Cart>
+          </Route>
+          
         </Switch>
         <Footer></Footer>
       </Router>

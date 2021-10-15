@@ -4,7 +4,7 @@ import { Link,useLocation,useHistory} from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 const Login = () => {
 
-    const{googleSignIn}=useFirebase()
+    const{googleSignIn,setIsLoading}=useFirebase()
     const location = useLocation()
     const location_url=location.state?.from || '/home'
     const history=useHistory()
@@ -13,6 +13,11 @@ const Login = () => {
         .then(result => {
             history.push(location_url)
         })
+        .finally(()=>
+        setIsLoading(false)
+    )
+        
+    
     }
     return (
         <Container fluid>

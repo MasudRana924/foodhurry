@@ -1,13 +1,20 @@
 import React from 'react';
-import { Container, Nav, Navbar, Button } from 'react-bootstrap';
+import { Container, Nav, Navbar, Button, FormControl, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../../Hooks/useFirebase';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
+import useFoods from '../../../Hooks/useFoods';
+import Cart from '../../Cart/Cart';
 
 
 const Header = () => {
-    const{user,logOut}=useFirebase()
+    const { user, logOut } = useFirebase()
+    const {cart} = useFoods();
+    console.log("Header",cart);
    
+
     return (
         <>
             <Navbar className="navbar" sticky="top" collapseOnSelect expand="lg">
@@ -21,6 +28,14 @@ const Header = () => {
                             <Link to="/contact" className="ms-5 text-white">Contact Us</Link>
 
                         </Nav>
+                        <nav>
+                            <input type="text" placeholder=" search here" className="input"/>
+                            <Link to="/cart">                          
+                              <FontAwesomeIcon className="text-warning mt-1 me-5" icon= {faShoppingCart} />
+                                  {cart.lenght}                        
+                            </Link>
+                        </nav>
+                        
                         <Navbar.Text>
 
                             {
@@ -28,7 +43,7 @@ const Header = () => {
                             }
 
                             {
-                                user.email ? <Button onClick={logOut}variant="danger" size="sm">Logout</Button> : <Link to="/login">
+                                user.email ? <Button onClick={logOut} variant="danger" size="sm">Logout</Button> : <Link to="/login">
                                     <Button variant="secondary" size="sm" >
                                         Login
                                     </Button>
