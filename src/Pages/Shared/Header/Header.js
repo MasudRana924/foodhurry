@@ -1,19 +1,28 @@
 import React from 'react';
-import { Container, Nav, Navbar, Button, FormControl, Form } from 'react-bootstrap';
+import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../../Hooks/useFirebase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
-import useFoods from '../../../Hooks/useFoods';
-import Cart from '../../Cart/Cart';
 
 
-const Header = () => {
+
+const Header = (props) => {
     const { user, logOut } = useFirebase()
-    const {cart} = useFoods();
-    console.log("Header",cart);
+    // const {cart} = useFoods();
    
+    // console.log("Header",cart);
+   const {cart,handleSearch}=props
+   let totalQuantity = 0
+   
+   for (const product of cart) {
+    if (!product.quantity) {
+        product.quantity = 1;
+    }
+    totalQuantity = totalQuantity + product.quantity;
+
+}
 
     return (
         <>
@@ -29,10 +38,11 @@ const Header = () => {
 
                         </Nav>
                         <nav>
-                            <input type="text" placeholder=" search here" className="input"/>
+                            <input type="text"onChange={handleSearch} placeholder=" search here" className="input text-dark me-1"/>
                             <Link to="/cart">                          
-                              <FontAwesomeIcon className="text-warning mt-1 me-5" icon= {faShoppingCart} />
-                                  {cart.lenght}                        
+                              
+                              <span className="pe-5 mt-3"><FontAwesomeIcon className="text-warning" icon= {faShoppingCart} />
+                                 <span className="text-white cart-item">{totalQuantity}</span> </span>                      
                             </Link>
                         </nav>
                         

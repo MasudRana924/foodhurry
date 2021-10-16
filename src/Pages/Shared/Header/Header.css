@@ -5,3 +5,16 @@
 .nav a{
     text-decoration: none;
 }
+.input{
+    background-color:whitesmoke ;
+    border:1px solid #121618;
+    outline: #121618;
+}
+.cart-item{
+    position:absolute;
+    margin-top: -12px;
+    margin-left: -10px;
+    text-decoration: none;
+   
+   
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import useAuth from './../../Hooks/useAuth';
+
 import { useForm } from 'react-hook-form';
+import useAuth from '../../Hooks/useAuth';
 import './Order.css'
 
 const Order = () => {

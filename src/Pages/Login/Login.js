@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link,useLocation,useHistory} from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 import useFirebase from '../../Hooks/useFirebase';
 const Login = () => {
 
-    const{googleSignIn,setIsLoading}=useFirebase()
+    const{googleSignIn,setIsLoading}=useAuth()
     const location = useLocation()
     const location_url=location.state?.from || '/home'
     const history=useHistory()

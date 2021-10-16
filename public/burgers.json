@@ -1,64 +1,82 @@
 [
     {
       "id": 1,
+      "title":"burger",
       "name": "Laid back",
-      "price":"$10",
+      "rating":"5",
+      "price":"10",
       "desc": "Burger restaurants are not for the fancy crowd; it’s where people can go wearing t-shirts and jeans, enjoy good food with family or friends in a laid-back kind of atmosphere",
       "img": "https://image.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg"
     },
     {
       "id": 2,
+      "title":"burger",
       "name": "Signature burger",
-      "price":"$5",
+      "rating":"3.5",
+      "price":"5",
       "desc": " If you thought of an awesome name for your signature burger, use it in the name; otherwise, the burger may be named after the restaurant",
       "img": "https://image.freepik.com/free-photo/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon_2829-5398.jpg"
     },
     {
       "id": 3,
+      "title":"burger",
       "name": "Alliterations",
-      "price":"$10.6",
+      "rating":"2.5",
+      "price":"10.6",
       "desc": "Burger obviously starts with the letter “b” which opens up a whole world of naming opportunities when you consider alliterations. If you’re not familiar with this, an alliteration is a repetition of a sound in consecutive words. For example: Bob’s Burger Bar",
       "img": "https://image.freepik.com/free-photo/front-view-tasty-meat-burger-with-cheese-salad-dark-background_140725-89597.jpg"
     },
     {
       "id": 4,
+      "title":"burger",
       "name": "The Burger Barn",
-      "price":"$7",
+      "rating":"5",
+      "price":"7",
       "desc": "This scrumptious burger sits under a chilli lamb pattie, roasted bell pepper dip, onions, tomatoes and lettuce.",
       "img": "https://img.freepik.com/free-photo/front-view-meat-burger-with-cheese-salad-tomatoes-dark-floor_140725-89524.jpg?size=338&ext=jpg"
     },
     {
       "id": 5,
+      "title":"burger",
       "name": "Perfect Lamb Satay Burger",
-      "price":"$15",
+      "rating":"2",
+      "price":"15",
       "desc": "Succulent lamb burgers with the crunchiness of cashew nuts and the creaminess of peanut butter smothered with a gorgeous satay sauce.",
       "img": "https://img.freepik.com/free-photo/beef-cotlet-burger-with-sauce-wooden-board_114579-2600.jpg?size=338&ext=jpg"
     },
     {
       "id": 6,
+      "title":"burger",
       "name": " Lamb and Tomato Stuffed Burger",
-      "price":"$4",
+      "rating":"5",
+      "price":"4",
       "desc": "A perfectly shaped lamb pattie cooked to perfection. The tomatoes arent just a topping but the spotlight of this beautiful dish.",
       "img": "https://image.freepik.com/free-photo/beef-burger-stuffed-with-mixed-ingreadients-black-board_114579-2601.jpg"
     },
     {
       "id": 7,
+      "title":"burger",
       "name": "Crunchy Chicken and Fish Burger",
-      "price":"$7",
+      "rating":"3.8",
+      "price":"7",
       "desc": "If a burger for you is all about the meat and protein then youre at the right place. Experience the goodness of chicken, fish and a tangy hot and sour sauce.",
       "img": "https://image.freepik.com/free-photo/big-cheeseburger-french-fries_140725-2256.jpg"
     },
     {
       "id": 8,
+      "title":"burger",
       "name": "Chicken Feta Cheese Burger With Potato Salad",
-      "price":"$8",
+      "rating":"4.9",
+      "price":"8",
       "desc": "Chicken mince marinated with salt, pepper and feta cheese is only the beginning of this ultimate wonder. To accompany this weve got a guilt free potato salad with a yogurt dressing.",
       "img": "https://image.freepik.com/free-photo/hamburger-with-beef-meat-burger-fresh-vegetables-dark-surface_2829-5883.jpg"
     },
     {
       "id": 9,
+      "title":"burger",
       "name": " Stuffed Bean Burger",
-      "price":"$5.60",
+      "rating":"4.3",
+      "price":"5.60",
       "desc": "Being a vegetarian is no reason to deny yourself the gluttonous pleasures of an overstuffed bun. Try this bean burger with a chipotle chilli and a dash of lime.",
       "img": "https://image.freepik.com/free-photo/chicken-burger-wooden-board-side-view_141793-2338.jpg"
     }
