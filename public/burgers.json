@@ -79,5 +79,60 @@
       "price":"5.60",
       "desc": "Being a vegetarian is no reason to deny yourself the gluttonous pleasures of an overstuffed bun. Try this bean burger with a chipotle chilli and a dash of lime.",
       "img": "https://image.freepik.com/free-photo/chicken-burger-wooden-board-side-view_141793-2338.jpg"
+    },
+    {
+      "id": 10,
+      "title":"pizza",
+      "name": "Margherita",
+      "rating":"4.3",
+      "price":"8.60",
+      "desc": "Tomato sauce, mozzarella, mushrooms, pepperoni, and Stracchino (soft cheese)",
+      "img": "https://image.freepik.com/free-photo/crispy-mixed-pizza-with-olives-sausage_140725-3095.jpg"
+    },
+    {
+      "id": 11,
+      "title":"pizza",
+      "name": "Quattro Stagioni",
+      "rating":"4.3",
+      "price":"6.60",
+      "desc": "Tomato sauce, mozzarella, mushrooms, pepperoni, and Stracchino (soft cheese)",
+      "img": "https://image.freepik.com/free-photo/mix-pizza-chicken-tomato-bell-pepper-olives-mushroom-side-view_141793-3167.jpg"
+    },
+    {
+      "id": 12,
+      "title":"pizza",
+      "name": "Fattoria",
+      "rating":"4.3",
+      "price":"8.60",
+      "desc": "Tomato sauce, mozzarella, ham, mushrooms, artichokes, anchovies, and oregano.",
+      "img": "https://image.freepik.com/free-photo/pizza-with-salami-tomatoes-olives-cheese-dough-with-whole-wheat-flour-italian-food_2829-6855.jpg"
+    },
+    {
+      "id": 13,
+      "title":"pasta",
+      "name": "Ortolana",
+      "rating":"4.3",
+      "price":"4.60",
+      "desc": "Tomato sauce, mozzarella, ham, mushrooms, artichokes, anchovies, and oregano.",
+      "img": "https://image.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg"
+    },
+    {
+      "id": 14,
+      "title":"coffee",
+      "name": "Espresso",
+      "rating":"11",
+      "price":"11",
+      "desc": "The espresso, also known as a short black, is approximately 1 oz. of highly concentrated coffee. Although simple in appearance, it can be difficult to master",
+      "img": "https://image.freepik.com/free-vector/white-cup-hot-coffee-with-cinnamon-saucer-beans-wooden-table-realistic_1284-56783.jpg"
+    },
+    {
+      "id": 15,
+      "title":"icecream",
+      "name": "Blue Heaven ",
+      "rating":"5",
+      "price":"13",
+      "desc": "Blue Heaven is a milkshake and topping flavour sold primarily in Australia. It is blue in colour, and its taste is a mix of vanilla and raspberry",
+      "img": "https://image.freepik.com/free-photo/delicious-ice-cream_144627-19516.jpg"
     }
+
   ]

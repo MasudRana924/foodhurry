@@ -7,7 +7,7 @@ import './Food.css'
 const Food = (props) => {
     const { id, name, img, price, desc } = props.food
     return (
-        <Col className="mt-3">
+        <Col className="mt-5">
             <div className="card-style">
                 <Link to={`/details/${id}`}>
                     <img src={img} className="image" alt="" />
